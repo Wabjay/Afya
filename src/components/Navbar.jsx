@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className='w-full h-20 px-8 flex justify-between items-center'>
         <div className="flex w-[300px] h-[60px] items-center px-[10px] bg-[#F0F2FA] rounded-lg">
           <img src={Icon} alt="search icon" className="w-6 h-6"/>
-          <input type="text" name="" value={search} placeholder="Searh" className="pl-4 font-medium text-[#9B9FAE] border-0 outline-none w-full bg-[#F0F2FA]"
+          <input type="text" name="" value={search} placeholder="Search" className="pl-4 font-medium text-[#9B9FAE] border-0 outline-none w-full bg-[#F0F2FA]"
           onChange={(e)=>setSearch(e.target.value)} />
         </div>
         <div className="flex gap-[14px]">
