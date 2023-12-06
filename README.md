@@ -1,8 +1,5 @@
-# React + Vite
+# Afya
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Afya is a decentralized electronic health record (EHR) management solution. Our goal is to make it easy to manage your health data and control access to your medical records. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+We are a very ambitious project in active development, and we aim to be the foremost platform for self-sovereign medical data management in the African continent!
