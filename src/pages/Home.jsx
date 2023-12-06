@@ -6,13 +6,13 @@ const Home = () => {
       <p className="text-[28px] font-semibold ">Medical History</p>
 
       {/* Top card list */}
-      <div className='grid grid-cols-auto gap-x-6 mb-6'>
+      <div className='grid grid-cols-auto gap-x-4 mb-6'>
         <Card>
           <div className='grid grid-cols-auto gap-x-3 w-full max-w-[407px]'>
             <img src={Profile} alt="Profile" className='w-[65px] h-[65px]' />
             <div>
-              <p className="text-[28px] font-semibold mb-[21px]">Loffi Pearl</p>
-              <div className='text-[16px] grid grid-cols-auto gap-x-6'>
+              <p className="text-[20px] font-semibold mb-[21px]">Loffi Pearl</p>
+              <div className='text-[16px] grid grid-cols-auto gap-6'>
                 <p className='font-semibold w-fit'>Gender</p>
                 <p className='font-medium w-fit'>Female</p>
                 <p className='font-semibold w-fit'>Birth</p>
@@ -30,9 +30,9 @@ const Home = () => {
           <div className='px-6'>
             <p className="text-[24px] font-semibold mb-[21px] text-[#8842F0]">Symptoms</p>
 
-            <div className='text-[16px] grid grid-cols-2 gap-x-6'>
+            <div className='text-[16px] grid grid-cols-2 gap-x-2'>
               <div>
-                <p className="text-[28px] font-semibold mb-4">Current Symptoms</p>
+                <p className="text-[20px] font-semibold mb-4">Current Symptoms</p>
                 <ul className='list-disc'>
                   <li className='font-semibold w-fit '>Elevated blood pressure readings,
                     occasional headaches.</li>
@@ -40,7 +40,7 @@ const Home = () => {
                   <li className='font-semibold w-fit'>Severity: Mild to moderate</li>
                 </ul> </div>
               <div>
-                <p className="text-[28px] font-semibold mb-4">Historical Symptoms</p>
+                <p className="text-[20px] font-semibold mb-4">Historical Symptoms</p>
                 <ul className='list-disc'>
                   <li className='font-semibold w-fit'>Chronic hypertension symptoms,
                     occasional dizziness.</li>
@@ -52,6 +52,66 @@ const Home = () => {
           </div>
         </Card>
       </div>
+
+       {/* Seconf Card list */}
+       <div className='grid grid-cols-auto gap-x-6 mb-6'>
+        <Card>
+          <div className='px-6'>
+            <p className="text-[24px] font-semibold mb-[21px] text-[#8842F0]">Medication</p>
+
+            <div className='text-[16px] grid grid-cols-auto gap-x-12'>
+
+              <p className="text-[20px] font-semibold mb-4">Health status</p>
+              <p className="text-[20px] font-semibold mb-4">Family medical history</p>
+
+              <div className='text-[16px] grid grid-cols-auto gap-x-6 mb-8'>
+              <p className='font-semibold w-fit'>Healthcare physician:</p>
+              <p className='font-medium w-fit'>Dr. Albert Duke</p>
+              <p className='font-semibold w-fit'>Healthcare name:</p>
+              <p className='font-medium w-fit'>UCH Teaching hospital</p>
+              <p className='font-semibold w-fit'>Medical condition:</p>
+              <p className='font-medium w-fit'>Hypertension</p>
+              <p className='font-semibold w-fit'>Surgery:</p>
+              <p className='font-medium w-fit'>No</p>
+              <p className='font-semibold w-fit'>Surgery type:</p>
+              <p className='font-medium w-fit'>None</p>
+              <p className='font-semibold w-fit'>Allergies:</p>
+              <p className='font-medium w-fit'>None</p>
+            </div>
+
+              <div className='text-[16px] grid grid-cols-auto gap-x-6 mb-8'>
+              <p className='font-semibold w-fit'>Mother:</p>
+              <p className='font-medium w-fit'>Hypertension</p>
+              <p className='font-semibold w-fit'>Father:</p>
+              <p className='font-medium w-fit'>Diabetes</p>
+              <p className='font-semibold w-fit'>Sibiling:</p>
+              <p className='font-medium w-fit'>N/A</p>
+              <p className='font-semibold w-fit'>Genetic condition:</p>
+              <p className='font-medium w-fit'>N/A</p>
+            </div>
+
+
+            </div>
+          </div>
+        </Card>
+
+        {/* <Card>
+          <div className='px-6'>
+            <p className="text-[24px] font-semibold mb-[21px] text-[#8842F0]">Family medical history</p>
+
+            <p className="text-[20px] font-semibold mb-4">Health condition</p>
+            <div className='text-[16px] grid grid-cols-auto gap-x-6 mb-8'>
+              <p className='font-semibold w-fit'>Mother:</p>
+              <p className='font-medium w-fit'>Hypertension</p>
+              <p className='font-semibold w-fit'>Father:</p>
+              <p className='font-medium w-fit'>Diabetes</p>
+              <p className='font-semibold w-fit'>Sibiling:</p>
+              <p className='font-medium w-fit'>N/A</p>
+            </div>
+          </div>
+        </Card> */}
+      </div>
+
       {/* Seconf Card list */}
       <div className='grid grid-cols-auto gap-x-6 mb-6'>
         <Card>
@@ -60,8 +120,8 @@ const Home = () => {
 
             <div className='text-[16px] grid grid-cols-auto gap-x-12'>
 
-              <p className="text-[28px] font-semibold mb-4">Prescribed Medication</p>
-              <p className="text-[28px] font-semibold mb-4">Past Medication</p>
+              <p className="text-[20px] font-semibold mb-4">Prescribed Medication</p>
+              <p className="text-[20px] font-semibold mb-4">Past Medication</p>
 
               <div className=''>
                 <p className='font-medium w-fit'>Amlodipine (5mg)</p>
@@ -101,22 +161,6 @@ const Home = () => {
             </div>
           </div>
         </Card>
-
-        <Card>
-          <div className='px-6'>
-            <p className="text-[24px] font-semibold mb-[21px] text-[#8842F0]">Family medical history</p>
-
-            <p className="text-[28px] font-semibold mb-4">Health condition</p>
-            <div className='text-[16px] grid grid-cols-auto gap-x-6 mb-8'>
-              <p className='font-semibold w-fit'>Mother:</p>
-              <p className='font-medium w-fit'>Hypertension</p>
-              <p className='font-semibold w-fit'>Father:</p>
-              <p className='font-medium w-fit'>Diabetes</p>
-              <p className='font-semibold w-fit'>Sibiling:</p>
-              <p className='font-medium w-fit'>N/A</p>
-            </div>
-          </div>
-        </Card>
       </div>
       {/* Third Card List */}
       <div className='grid grid-cols-auto gap-x-6 mb-6'>
@@ -124,7 +168,7 @@ const Home = () => {
           <div className='px-6 w-ful max-w-[735px]'>
             <p className="text-[24px] font-semibold mb-[21px] text-[#8842F0]">Diagnosis result</p>
 
-            <p className="text-[28px] font-semibold mb-4">Test result</p>
+            <p className="text-[20px] font-semibold mb-4">Test result</p>
             <div className='text-[16px] grid grid-cols-auto gap-x-6 mb-8'>
               <p className='font-semibold w-fit'>Test type:</p>
               <p className='font-medium w-fit'>Blood pressure monitoring, lipid profile.</p>
@@ -138,7 +182,7 @@ const Home = () => {
             </div>
           </div>
         </Card>
-        <Card>
+        {/* <Card>
           <div className='px-6'>
             <p className="text-[24px] font-semibold mb-[21px] text-[#8842F0]">Medical Condition</p>
 
@@ -149,7 +193,7 @@ const Home = () => {
                   <li className='font-semibold w-fit'>Severity: Mild to moderate</li>
                 </ul> 
           </div>
-        </Card>
+        </Card> */}
 
       </div>
     </div>
