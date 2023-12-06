@@ -7,7 +7,7 @@ import User from "../assets/User.png"
 import Setting from "../assets/Setting.png"
 import Folder from "../assets/Folder.png"
 import Search from "../assets/Search.png"
-import Logo from "../assets/logo.png"
+import Logo from "../assets/vite.png"
 
 const SideBar = () => {
   const [open, setOpen] = useState(true);
@@ -43,12 +43,12 @@ const SideBar = () => {
         <div className="flex gap-x-4 items-center">
           <img alt=""
             src={Logo}
-            className={`cursor-pointer duration-500 ${
+            className={`cursor-pointer duration-500  w-10 h-10${
               open && "rotate-[360deg]"
             }`}
           />
           <h1
-            className={`text-[#000] origin-left font-bold text-2xl duration-200 tracking-[0.1px] ${
+            className={`text-[#fff] origin-left font-bold text-2xl duration-200 tracking-[0.1px] ${
               !open && "scale-0"
             }`}
           >
@@ -59,7 +59,7 @@ const SideBar = () => {
           {Menus.map((Menu, index) => (
             <li
               key={index}
-              className={`flex rounded-md p-2 cursor-pointer hover:bg-white hover:text-[#8842F0] text-[#C3C5CE] text-xl font-[600] items-center gap-x-4 
+              className={`flex rounded-md p-2 cursor-pointer hover:bg-white hover:text-[#8842F0] text-white text-xl font-[600] items-center gap-x-4 
               ${Menu.gap ? "mb-[105px]" : "mb-9"} ${
                 index === 0 && "bg-light-white"
               } `}
