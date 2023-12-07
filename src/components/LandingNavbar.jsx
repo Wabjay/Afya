@@ -20,7 +20,7 @@ const LandingNavbar = () =>
         </ul>
 
         <button type="button" className='bg-primary text-white hidden md:flex items-center gap-x-2 px-6 py-4 mr-2 rounded-lg font-medium uppercase hover:bg-secondary hover:shadow-lg hover:text-dark'>
-          <Link to="/" className='text-base font-bold leading-4'>Join Us</Link><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          <Link to="/app" className='text-base font-bold leading-4'>Join Us</Link><ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
         </button>
 
         {/* Hamburger Icon */}

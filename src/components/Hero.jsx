@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Hero = () =>
 {
@@ -16,7 +17,9 @@ const Hero = () =>
               Empowering individuals to take control of their health and wellbeing.</p>
             {/* CTA button */}
             <div className="flex justify-center">
-              <button type="button" className='bg-primary text-white px-9 py-3.5 lg:mb-20 rounded-md font-medium  hover:bg-secondary hover:text-dark hover:shadow-lg'><a href="#">Join Us</a></button>
+              <Link to="/app">
+                <button type="button" className='bg-primary text-white px-9 py-3.5 lg:mb-20 rounded-md font-medium  hover:bg-secondary hover:text-dark hover:shadow-lg'><a href="#">Join Us</a></button>
+              </Link>
             </div>
           </div>
         </div>
@@ -37,7 +40,7 @@ const Hero = () =>
             <p className="w-12 h-[0.125rem] bg-dark"></p>
             <p>Allow healthcare providers to
               access  your medical data in real-time.</p>
-          </div> 
+          </div>
         </div>
       </section>
     </>
