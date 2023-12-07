@@ -1,33 +1,37 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
+import LandingLayout from './layout/LandingLayout'
 
 
-function App() {
+function App()
+{
 
-
+  const { pathname } = useLocation()
+  console.log(pathname)
 
   return (
- 
-     
-        <React.Fragment>          
-            <BrowserRouter>
-            <Layout >
-              <div className="w-full">
+    <>
+      {/* <BrowserRouter> */}
+
+      {
+        pathname == "/"
+          ? <LandingLayout />
+          : <Layout >
+            <div className="w-full">
               <Routes>
                 <Route exact path="/" element={<Home />} />
-               
-                {/* <Route exact path="/project/:id" element={<Project />} /> */}
+
                 <Route path="*" element={<Home />} />
               </Routes>
-                </div>
-                </Layout>
-            </BrowserRouter>
-          
-        </React.Fragment>
+            </div>
+          </Layout>
+      }
+      {/* </BrowserRouter> */}
+    </>
   );
 }
- 
+
 export default App;
