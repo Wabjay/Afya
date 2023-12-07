@@ -20,15 +20,22 @@ function App()
         pathname == "/"
           ? <LandingLayout />
           : <Layout >
-            <div className="w-full">
+            <div
+              className="w-full">
               <Routes>
-                <Route exact path="/" element={<Home />} />
+                <Route
+                  exact
+                  path="/"
+                  element={<Home />} />
 
-                <Route path="*" element={<Home />} />
+                <Route
+                  path="*"
+                  element={<Home />} />
               </Routes>
             </div>
           </Layout>
       }
+
       {/* </BrowserRouter> */}
     </>
   );
