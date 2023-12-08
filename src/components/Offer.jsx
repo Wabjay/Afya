@@ -117,7 +117,7 @@ const Offer = () =>
         {/* End CTA */}
 
         {/* Newsletter */}
-        <div className='flex flex-col items-center justify-center p-6 md:p-16 gap-12 bg-primary rounded-t-lg'>
+        <div className='flex flex-col items-center justify-center p-6 -mt-2 md:p-16 gap-12 bg-primary rounded-t-xl'>
           <h3 className='text-4xl md:text-5xl text-white font-bold leading-[1.15] text-center'>Join Our Newsletter</h3>
           <div className='flex items-center justify-between md:gap-12 bg-[#F9F1FE] rounded-md'>
             <input type="email" name="email" id="email" placeholder='Enter your email' className='bg-transparent md:p-4 ml-2 rounded-md border-none' />
