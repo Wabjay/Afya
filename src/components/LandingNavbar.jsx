@@ -14,7 +14,7 @@ const LandingNavbar = () =>
         </div>
         <ul className="hidden sm:flex flex-1 justify-center items-center gap-8 uppercase font-medium tracking-wider text-dark">
           <li className='cursor-pointer text-primary border-b-2 border-primary hover:text-accent'><a href="#">Home</a></li>
-          <li className='cursor-pointer hover:text-accent'><a href="#">Product</a></li>
+          <li className='cursor-pointer hover:text-accent'><Link to="/app">Product</Link></li>
           <li className='cursor-pointer hover:text-accent'><a href="#">Contact</a></li>
           <li className='cursor-pointer hover:text-accent'><a href="#">Login</a></li>
         </ul>
