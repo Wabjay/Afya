@@ -22,16 +22,16 @@ export default {
         'accentued': '0px 13px 19px 0px rgba(0, 0, 0, 0.07);'
       },
     },
-    // screens: {
-    //   'tablet': '576px',
-    //   // => @media (min-width: 640px) { ... }
+    screens: {
+      'tablet': '576px',
+      // => @media (min-width: 640px) { ... }
     
-    //   'laptop': '1024px',
-    //   // => @media (min-width: 1024px) { ... }
+      'laptop': '1024px',
+      // => @media (min-width: 1024px) { ... }
     
-    //   'desktop': '1280px',
-    //   // => @media (min-width: 1280px) { ... }
-    // },
+      'desktop': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
     fontFamily: {
       "Work-Sans": ["Work Sans", "sans-serif"]
     },
